@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PALUGADA TOUR AND VILLA — paket wisata, private trip, dan penginapan pilihan untuk pengalaman liburan istimewa.">
+<meta name="theme-color" content="#171713">
+<title>PALUGADA TOUR AND VILLA</title>
+<style>
+:root{--bg:#171713;--gold:#c8a96b;--cream:#f5f1e8;--muted:#bcb5a7}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.sans{font-family:Arial,Helvetica,sans-serif}
+header{position:absolute;z-index:5;top:0;left:0;width:100%;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff30}
+.brand{display:flex;gap:12px;align-items:center}.seal{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:24px}
+.brand strong{display:block;font-size:14px;letter-spacing:2px}.brand small{display:block;color:var(--gold);font:9px Arial;letter-spacing:3px}
+nav{display:flex;gap:27px;font:11px Arial;letter-spacing:1.3px;text-transform:uppercase}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid var(--gold);color:var(--gold);padding:8px 11px}
+.hero{min-height:690px;height:94vh;max-height:900px;display:flex;align-items:center;padding:145px 10% 90px;position:relative;background:linear-gradient(90deg,#11130fe8 0%,#11130f8a 55%,#11130f30),url('https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:after{content:"";position:absolute;bottom:0;left:0;right:0;height:140px;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:1;max-width:700px}.eyebrow{font:11px Arial;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(48px,7vw,88px);font-weight:normal;line-height:1.02;letter-spacing:-2px}h1 em{color:var(--gold)}
+.hero p{font:15px/1.9 Arial;color:#e4dfd4;max-width:520px;margin:25px 0 30px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 21px;border:1px solid var(--gold);font:11px Arial;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);transition:.2s}.btn.primary{background:var(--gold);color:#171713}.btn:hover{background:#e1c58c;color:#171713}
+section{padding:90px 9%}.section-head{text-align:center;max-width:680px;margin:0 auto 44px}.section-head .eyebrow{margin-bottom:12px}.section-head h2{font-size:clamp(34px,4vw,51px);font-weight:normal;line-height:1.15}.section-head p{font:14px/1.8 Arial;color:var(--muted);margin-top:15px}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;background:#201f19}.intro img{width:100%;height:420px;object-fit:cover}.intro h2{font-size:45px;line-height:1.12;font-weight:normal}.intro p{font:14px/1.9 Arial;color:var(--muted);margin:20px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#22221c;border:1px solid #ffffff12;overflow:hidden}.card img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .5s}.card:hover img{transform:scale(1.04)}.card-body{padding:23px}.card h3{font-size:24px;font-weight:normal}.card p{font:13px/1.8 Arial;color:var(--muted);margin:10px 0 17px}.more{color:var(--gold);font:10px Arial;letter-spacing:1.5px;text-transform:uppercase}
+.villa{background:#201f19}.villa .cards{grid-template-columns:repeat(2,1fr)}.villa .card img{height:290px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.feature{padding:20px 12px;border-top:1px solid #ffffff25}.feature b{display:block;color:var(--gold);font-size:29px;font-weight:normal;margin-bottom:6px}.feature span{font:11px Arial;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.cta{padding:85px 8%;text-align:center;background:linear-gradient(#171713c9,#171713e8),url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=85') center/cover}.cta h2{font-size:clamp(36px,5vw,58px);font-weight:normal}.cta p{font:14px Arial;color:#ddd;margin:15px auto 25px;max-width:570px}
+footer{padding:42px 8%;display:flex;justify-content:space-between;gap:25px;align-items:center;border-top:1px solid #ffffff20;color:var(--muted);font:12px Arial}footer strong{color:var(--cream);letter-spacing:2px}
+.wa{position:fixed;right:22px;bottom:22px;z-index:8;background:#1fa855;color:white;border-radius:30px;padding:13px 18px;font:12px Arial;box-shadow:0 5px 20px #0006}
+@media(max-width:800px){header{padding:16px 5%}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#171713;padding:22px 7%;flex-direction:column;gap:18px}.menu{display:block}nav.open{display:flex}.hero{min-height:650px;height:88vh;padding:130px 7% 80px;background-position:58% center}section{padding:68px 7%}.intro{grid-template-columns:1fr;gap:30px}.intro img{height:300px}.cards{grid-template-columns:1fr 1fr}.villa .cards{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}footer{flex-direction:column;text-align:center}}
+@media(max-width:520px){.brand strong{font-size:11px;letter-spacing:1.3px}.brand small{font-size:8px}.seal{width:38px;height:38px}.hero{min-height:620px}.hero p{font-size:14px}.cards,.villa .cards{grid-template-columns:1fr}.card img,.villa .card img{height:220px}.intro h2{font-size:37px}.wa{right:13px;bottom:13px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="#home" aria-label="PALUGADA Tour and Villa">
+    <span class="seal">P</span><span><strong>PALUGADA TOUR AND VILLA</strong><small>JOURNEY • STAY • EXPERIENCE</small></span>
+  </a>
+  <button class="menu" id="menuBtn" aria-label="Buka menu">MENU ☰</button>
+  <nav id="nav"><a href="#home">Beranda</a><a href="#tentang">Tentang</a><a href="#wisata">Paket Wisata</a><a href="#villa">Villa</a><a href="#kontak">Kontak</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Discover the beauty of Indonesia</div>
+    <h1>Every Journey<br>Becomes a <em>Story.</em></h1>
+    <p>Temukan perjalanan istimewa bersama PALUGADA TOUR AND VILLA. Nikmati keindahan destinasi, kenyamanan menginap, dan pengalaman liburan yang berkesan.</p>
+    <div class="actions"><a class="btn primary" href="#wisata">Jelajahi Paket</a><a class="btn" href="https://wa.me/6282113480499?text=Halo%20PALUGADA%20TOUR%20AND%20VILLA%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata." target="_blank" rel="noopener">Konsultasi Trip</a></div>
+  </div>
+</section>
+
+<section class="intro" id="tentang">
+  <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1100&q=85" alt="Keindahan arsitektur dan destinasi wisata">
+  <div><div class="eyebrow">Welcome to Palugada</div><h2>Liburan lebih bermakna, perjalanan lebih istimewa.</h2>
+  <p>Kami hadir untuk membantu merencanakan perjalanan yang nyaman dan menyenangkan. Mulai dari perjalanan keluarga, liburan bersama teman, hingga private trip sesuai kebutuhan Anda.</p>
+  <p>Rencanakan perjalanan Anda dengan lebih mudah. Hubungi tim kami untuk informasi paket, itinerary, dan pilihan akomodasi.</p>
+  <a class="btn" href="#kontak">Hubungi Kami</a></div>
+</section>
+
+<section id="wisata">
+  <div class="section-head"><div class="eyebrow">Explore with us</div><h2>Temukan perjalanan favoritmu</h2><p>Pilih inspirasi perjalanan dan konsultasikan kebutuhan trip Anda bersama kami.</p></div>
+  <div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Pemandangan pulau tropis"><div class="card-body"><h3>Island Escape</h3><p>Jelajahi pesona pantai, pulau tropis, dan panorama laut yang memukau.</p><a class="more" href="https://wa.me/6282113480499?text=Halo%2C%20saya%20tertarik%20paket%20Island%20Escape.">Tanya Paket →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=900&q=85" alt="Candi dan warisan budaya"><div class="card-body"><h3>Culture & Heritage</h3><p>Rasakan kekayaan budaya, sejarah, kuliner, dan keindahan Yogyakarta.</p><a class="more" href="https://wa.me/6282113480499?text=Halo%2C%20saya%20tertarik%20paket%20Culture%20%26%20Heritage.">Tanya Paket →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Pemandangan alam pegunungan"><div class="card-body"><h3>Nature Adventure</h3><p>Nikmati udara segar, panorama alam, dan pengalaman petualangan seru.</p><a class="more" href="https://wa.me/6282113480499?text=Halo%2C%20saya%20tertarik%20paket%20Nature%20Adventure.">Tanya Paket →</a></div></article>
+  </div>
+</section>
+
+<section class="villa" id="villa">
+  <div class="section-head"><div class="eyebrow">Stay in comfort</div><h2>Waktu istirahat yang sempurna</h2><p>Temukan inspirasi akomodasi untuk melengkapi pengalaman liburan Anda. Hubungi kami untuk mengecek pilihan dan ketersediaan.</p></div>
+  <div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1100&q=85" alt="Villa dengan kolam renang"><div class="card-body"><h3>Private Pool Villa</h3><p>Suasana privat untuk momen berkualitas bersama keluarga atau sahabat.</p><a class="more" href="https://wa.me/6282113480499?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Private%20Pool%20Villa.">Cek Ketersediaan →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85" alt="Kamar penginapan nyaman"><div class="card-body"><h3>Comfort Stay</h3><p>Pilihan tempat menginap nyaman untuk menemani perjalanan Anda.</p><a class="more" href="https://wa.me/6282113480499?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20pilihan%20penginapan.">Cek Ketersediaan →</a></div></article>
+  </div>
+</section>
+
+<section>
+  <div class="features">
+    <div class="feature"><b>01</b><span>Perjalanan fleksibel</span></div>
+    <div class="feature"><b>02</b><span>Konsultasi mudah</span></div>
+    <div class="feature"><b>03</b><span>Trip personal & grup</span></div>
+    <div class="feature"><b>04</b><span>Pengalaman berkesan</span></div>
+  </div>
+</section>
+
+<section class="cta" id="kontak">
+  <div class="eyebrow">Your next story starts here</div><h2>Siap untuk perjalanan berikutnya?</h2>
+  <p>Ceritakan rencana liburan Anda. Kami siap membantu memberikan informasi dan menyiapkan perjalanan yang sesuai kebutuhan.</p>
+  <a class="btn primary" href="https://wa.me/6282113480499?text=Halo%20PALUGADA%20TOUR%20AND%20VILLA%2C%20saya%20ingin%20merencanakan%20liburan." target="_blank" rel="noopener">Booking via WhatsApp</a>
+</section>
+</main>
+<footer><div><strong>PALUGADA TOUR AND VILLA</strong><br>Journey • Stay • Experience</div><div>WhatsApp: 0821-1348-0499<br>© <span id="year"></span> PALUGADA. All rights reserved.</div></footer>
+<a class="wa" href="https://wa.me/6282113480499?text=Halo%20PALUGADA%20TOUR%20AND%20VILLA" target="_blank" rel="noopener">WhatsApp ↗</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

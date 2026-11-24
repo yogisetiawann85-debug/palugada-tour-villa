@@ -1,0 +1,21 @@
+PALUGADA TOUR AND VILLA
+
+CARA MEMBUKA:
+1. Ekstrak file ZIP.
+2. Buka folder PALUGADA_TOUR_AND_VILLA.
+3. Klik index.html untuk melihat website di browser.
+
+CARA ONLINE GRATIS (GitHub Pages):
+1. Buat akun gratis di https://github.com/
+2. Buat repository baru, misalnya palugada-tour-villa.
+3. Upload index.html ke repository.
+4. Buka Settings > Pages.
+5. Pada bagian Build and deployment, pilih Deploy from a branch.
+6. Pilih branch main dan folder /(root), lalu Save.
+7. Tunggu proses publikasi. GitHub akan memberikan alamat website gratis.
+
+Catatan:
+- Website ini statis (HTML, CSS, JavaScript), tidak membutuhkan hosting berbayar.
+- Foto pada website dimuat dari Unsplash sehingga membutuhkan koneksi internet.
+- Nomor WhatsApp yang dipasang: 0821-1348-0499.
+- Ubah teks, foto, paket, dan informasi kontak di index.html sesuai layanan dan data usaha sebenarnya.
